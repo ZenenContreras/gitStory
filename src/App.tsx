@@ -1,13 +1,11 @@
-import toast from 'react-hot-toast'
-
-
+import AppRoutes from "./routes/AppRoutes.tsx"
 
 function App() {
-const notify = () => toast('Here is a notification')
-
 
   return (
-      <button onClick={notify}> Button </button>
+    <div>
+      <AppRoutes />
+    </div>
   )
 }
 
