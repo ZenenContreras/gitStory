@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router'
 import LandingNavBar from './LandingNavBar.tsx'
 import { useState } from 'react'
+import LandingFooter from './LandingFooter.tsx'
 
 const LandingLayout = () => {
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false)
@@ -16,9 +17,13 @@ const LandingLayout = () => {
         
       </header> 
 
-      <main className='flex flex-col w-full max-w-7xl px-8 md:px-12 p-24'>
+      <main className='flex flex-col w-full max-w-7xl px-8 md:px-12 pt-24'>
         <Outlet />
       </main>
+
+      <div className='w-full max-w-7xl px-8 md:px-12'>
+        <LandingFooter />
+      </div>
 
     </div>
   )
