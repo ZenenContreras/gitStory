@@ -2,7 +2,7 @@ import { Terminal } from "lucide-react"
 
 function LandingFooter() {
   return (
-    <footer className='flex flex-wrap flex-row w-full mx-auto justify-between py-16 md:py-24 font-mono gap-5 '>
+    <footer className='flex flex-wrap flex-row w-full mx-auto justify-between py-16 md:py-24 font-mono gap-5 text-sm'>
 
         <div className="flex items-center flex-row gap-2">
             <div className="text-primary bg-primary/10 p-1 rounded">
