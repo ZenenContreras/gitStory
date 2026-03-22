@@ -19,7 +19,7 @@ const steps: steps[] = [
 function GrowSection() {
   return (
     <section className="flex flex-col items-center py-16 md:py-24">
-        <h2 className="font-black  dark:text-slate-100 text-5xl md:text-6xl mb-8">How It Works</h2>
+        <h2 className="font-black  dark:text-slate-100 text-3xl md:text-4xl mb-8">How It Works</h2>
         <p className="font-mono dark:text-secondary text-center text-sm md:text-md mb-24">Transform your development workflow into a social growth engine in <span className="font-bold">three</span> simple steps</p>
         <div className="flex flex-col md:flex-row  gap-18 md:gap-4">
             {steps.map((step)=> (

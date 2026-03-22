@@ -1,5 +1,6 @@
 import GrowSection from '../components/landing/GrowSection.tsx'
 import HeroSection from '../components/landing/HeroSection'
+import PricingSection from '../components/landing/PricingSection.tsx'
 import ToolsSection from '../components/landing/ToolsSection.tsx'
 
 function LandingPage() {
@@ -8,6 +9,7 @@ function LandingPage() {
         <HeroSection />
         <ToolsSection />
         <GrowSection />
+        <PricingSection />
     </div>
   )
 }
