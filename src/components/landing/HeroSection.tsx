@@ -1,8 +1,8 @@
-import { CircleUserRound, CirclePlay, Sparkles, PencilLine } from 'lucide-react'
+import { CircleUserRound, CirclePlay, Sparkles, PencilLine, ThumbsUp, MessageCircle, Share2 } from 'lucide-react'
 
 function HeroSection() {
     return (
-        <div className="flex flex-col items-center gap-12 py-16 md:py-24">
+        <div className="flex flex-col items-center gap-8 ">
             <div className="flex justify-between items-center gap-2 bg-zinc-100 border-zinc-700 dark:bg-zinc-800 shadow-lg py-1 px-3 rounded-xl dark:text-zinc-200 dark:border-secondary font-mono">
                 <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                 <p className="text-xs">v1.0 is now Live</p>
@@ -16,12 +16,12 @@ function HeroSection() {
             <p className="text-center dark:text-secondary md:text-lg">Turn cryptic <span className="font-mono text-primary bg-primary/10 px-1 py-0.5 rounded text-sm"> git commit</span> messages into viral LinkedIn updates in seconds. <br />Stop wasting time writing copy; start shipping.</p>
 
             <div className="flex flex-col md:flex-row gap-5">
-                <button className="btn-primary">
+                <button className="btn-primary text-sm md:text-md">
                     <CircleUserRound />
                     Connect Your Github
                 </button>
 
-                <button className='btn-primary bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc/90 text-zinc-900 dark:text-background-light  dark:shadow-zinc-900/90 border border-zinc-300 dark:border-zinc-600'>
+                <button className='btn-primary bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc/90 text-zinc-900 dark:text-background-light  dark:shadow-zinc-900/90 border border-zinc-300 dark:border-zinc-600  text-sm md:text-md'>
 
                     <div className='text-black dark:text-white'>
                         <CirclePlay />
@@ -55,12 +55,12 @@ function HeroSection() {
                         </div>
 
                         <div>
-                           <p className='text-zinc-400'>
+                            <p className='text-zinc-400'>
                                 <span className='text-primary font-bold'>→ project-x</span> <span className='text-purple-500'> git:(main)</span> <span className='text-zinc-100'>git push origin main</span>
                             </p>
                         </div>
 
-                        <hr className='text-secondary'/>
+                        <hr className='text-secondary' />
 
                         <div className='pt-7 space-y-3'>
                             <p className='text-sm uppercase tracking-widest text-zinc-600 font-bold'>Metadata Detected</p>
@@ -88,7 +88,7 @@ function HeroSection() {
 
                     <div className='flex justify-between items-center bg-zinc-100 dark:bg-zinc-900/50 px-4 py-3 border-b border-zinc-300 dark:border-zinc-800'>
                         <div className='flex items-center gap-2'>
-                            <div className='p-1 bg-primary/20 rounded-md text-primary'><PencilLine size={14}/></div>
+                            <div className='p-1 bg-primary/20 rounded-md text-primary'><PencilLine size={14} /></div>
                             <span className='text-zinc-900 dark:text-zinc-100 text-xs  md:text-sm font-bold'>Generated Post Preview</span>
                         </div>
 
@@ -99,9 +99,9 @@ function HeroSection() {
 
                         <div className='flex items-center gap-3'>
 
-                                <div className='dark:text-secondary'>
-                                    <CircleUserRound size={40}/>
-                                </div>
+                            <div className='dark:text-secondary'>
+                                <CircleUserRound size={40} />
+                            </div>
 
                             <div>
                                 <p className='dark:text-zinc-100 text-sm font-bold'>Alex Developer</p>
@@ -124,11 +124,11 @@ function HeroSection() {
                         </div>
 
                         <div className='flex justify-between pt-3 border-t border-zinc-800/50 text-zinc-500'>
-                             <div className='flex gap-5 text-xs '>
-                                <span className="flex items-center gap-1 hover:text-zinc-300 transition-colors">👍 42</span>
-                                <span className="flex items-center gap-1 hover:text-zinc-300 transition-colors">💬 12</span>
-                             </div>
-                             <button className='hover:text-primary transition-colors'><CirclePlay size={16}/></button>
+                            <div className='flex gap-5 text-xs'>
+                                <span className="flex items-center gap-1 hover:text-zinc-300 transition-colors"><ThumbsUp size={16} /> 42</span>
+                                <span className="flex items-center gap-1 hover:text-zinc-300 transition-colors"><MessageCircle size={16} /> 12</span>
+                            </div>
+                            <button className='hover:text-primary transition-colors'><Share2 size={16} /></button>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,12 @@
-import {SquareChevronRight, CircleUserRound, Menu} from 'lucide-react'
+import { type Dispatch, type SetStateAction } from 'react'
+import {SquareChevronRight, CircleUserRound, Menu, X} from 'lucide-react'
 
+interface LandingNavBarProps {
+  menuIsOpen: boolean;
+  setMenuIsOpen: Dispatch<SetStateAction<boolean>>;
+}
 
-function LandingNavBar() {
+function LandingNavBar({ menuIsOpen, setMenuIsOpen }: LandingNavBarProps) {
   return (
     <nav className="dark:text-white flex justify-between items-center">
       <div className='flex-1 flex gap-2 items-center'>
@@ -28,7 +33,12 @@ function LandingNavBar() {
       </div>
 
       <div className='flex md:hidden'>
-        <button className='text-primary'><Menu/></button>
+        <button 
+          className='text-primary transition-transform active:scale-98'
+          onClick={() => setMenuIsOpen(!menuIsOpen)}
+        >
+          {menuIsOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
     </nav>
   )
