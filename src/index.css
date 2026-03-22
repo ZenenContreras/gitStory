@@ -4,8 +4,9 @@
 @theme {
   --color-background-dark : #09090b;
   --color-background-light : #ffffff;
+  --color-background-secondary: #27272a;
   --color-primary: #3d84f5;
-
+  --color-secondary: #9f9fa9;
 }
 
 @layer components{
