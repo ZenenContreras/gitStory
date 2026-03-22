@@ -13,7 +13,7 @@ function HeroSection() {
                 <span className="bg-linear-to-r from-primary to-purple-500 inline-block text-transparent bg-clip-text">Let AI tell the world.</span>
             </h1>
 
-            <p className="text-center dark:text-secondary md:text-lg">Turn cryptic <span className="font-mono text-primary bg-primary/10 px-1 py-0.5 rounded text-sm"> git commit</span> messages into viral LinkedIn updates in seconds. <br />Stop wasting time writing copy; start shipping.</p>
+            <p className="text-center dark:text-secondary md:text-lg font-mono">Turn cryptic <span className="font-mono text-primary bg-primary/10 px-1 py-0.5 rounded text-sm"> git commit</span> messages into viral LinkedIn updates in seconds. <br />Stop wasting time writing copy; start shipping.</p>
 
             <div className="flex flex-col md:flex-row gap-5">
                 <button className="btn-primary text-sm md:text-md">
