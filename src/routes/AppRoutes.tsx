@@ -1,8 +1,6 @@
 import { Routes, Route } from "react-router"
-import LandingLayout from "../layouts/LandingLayout"
-
-
-import LandingPage from "../pages/landingPage"
+import LandingLayout from "../layouts/LandingLayout.tsx"
+import LandingPage from "../pages/LandingPage.tsx"
 
 function AppRoutes() {
   return (

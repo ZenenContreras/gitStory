@@ -2,7 +2,7 @@ import { CircleUserRound, CirclePlay, Sparkles, PencilLine, ThumbsUp, MessageCir
 
 function HeroSection() {
     return (
-        <div className="flex flex-col items-center gap-8 ">
+        <div className="flex flex-col items-center gap-8 pb-16">
             <div className="flex justify-between items-center gap-2 bg-zinc-100 border-zinc-700 dark:bg-zinc-800 shadow-lg py-1 px-3 rounded-xl dark:text-zinc-200 dark:border-secondary font-mono">
                 <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                 <p className="text-xs">v1.0 is now Live</p>

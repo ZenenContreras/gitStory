@@ -16,7 +16,7 @@ const LandingLayout = () => {
         
       </header> 
 
-      <main className='flex flex-col w-full max-w-7xl px-8 md:px-12 p-24 md:pt-28'>
+      <main className='flex flex-col w-full max-w-7xl px-8 md:px-12 p-24'>
         <Outlet />
       </main>
 
