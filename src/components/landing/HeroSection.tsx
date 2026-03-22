@@ -5,7 +5,7 @@ function HeroSection() {
         <div className="flex flex-col items-center gap-12 py-16 md:py-24">
             <div className="flex justify-between items-center gap-2 bg-zinc-100 border-zinc-700 dark:bg-zinc-800 shadow-lg py-1 px-3 rounded-xl dark:text-zinc-200 dark:border-secondary font-mono">
                 <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                <p className="text-xs">v1.0 is now Live on Product Hunt</p>
+                <p className="text-xs">v1.0 is now Live</p>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-black text-center dark:text-background-light leading-tight">
@@ -79,17 +79,17 @@ function HeroSection() {
 
                 <div className='relative flex items-center justify-center py-4 lg:py-0'>
                     <div className='absolute inset-0 bg-primary/20 blur-3xl rounded-full animate-pulse'></div>
-                    <div className='relative text-primary border border-primary/40 p-3.5 rounded-full bg-background-dark/80 shadow-[0_0_20px_rgba(61,132,245,0.3)] backdrop-blur-sm z-10'>
+                    <div className='relative text-primary border border-primary/40 p-3.5 rounded-full dark:bg-background-dark/80 shadow-[0_0_20px_rgba(61,132,245,0.3)] backdrop-blur-sm z-10'>
                         <Sparkles size={28} className="animate-spin-slow" />
                     </div>
                 </div>
 
-                <div className='flex-1 rounded-xl bg-background-secondary border border-zinc-800 w-full shadow-2xl overflow-hidden'>
+                <div className='flex-1 rounded-xl dark:bg-background-secondary border border-zinc-300 dark:border-zinc-800 w-full shadow-2xl overflow-hidden'>
 
-                    <div className='flex justify-between items-center bg-zinc-900/50 px-4 py-3 border-b border-zinc-800'>
+                    <div className='flex justify-between items-center bg-zinc-100 dark:bg-zinc-900/50 px-4 py-3 border-b border-zinc-300 dark:border-zinc-800'>
                         <div className='flex items-center gap-2'>
                             <div className='p-1 bg-primary/20 rounded-md text-primary'><PencilLine size={14}/></div>
-                            <span className='text-zinc-100 text-xs  md:text-sm font-bold'>Generated Post Preview</span>
+                            <span className='text-zinc-900 dark:text-zinc-100 text-xs  md:text-sm font-bold'>Generated Post Preview</span>
                         </div>
 
                         <button className='btn-primary py-2 px-2 text-[9px] md:text-xs font'>Post Now</button>
@@ -104,20 +104,20 @@ function HeroSection() {
                                 </div>
 
                             <div>
-                                <p className='text-zinc-100 text-sm font-bold'>Alex Developer</p>
-                                <p className='text-secondary/50 text-xs' >Senior Software Engineer • Just now</p>
+                                <p className='dark:text-zinc-100 text-sm font-bold'>Alex Developer</p>
+                                <p className='text-secondary dark:text-secondary/50 text-xs' >Senior Software Engineer • Just now</p>
                             </div>
 
                         </div>
 
                         <div className='space-y-4 text-sm'>
-                            <p className='text-zinc-100  leading-snug'>
+                            <p className='text-zinc-800 dark:text-zinc-100  leading-snug'>
                                 🚀 <span className="font-bold">Big news!</span> We just shipped Pro Plans.
                             </p>
-                            <p className='text-secondary/80 leading-relaxed'>
+                            <p className='text-zinc-800 dark:text-secondary/80 leading-relaxed'>
                                 Integrating Stripe was a journey, but it unlocks a whole new tier of features for our power users. It wasn't just about payments; it was about building a seamless upgrade experience.
                             </p>
-                            <p className='text-secondary/80'>Check out the new checkout flow! 👇</p>
+                            <p className='text-zinc-800 dark:text-secondary/80'>Check out the new checkout flow! 👇</p>
                             <div className='flex flex-wrap gap-2 text-primary font-mono text-xs'>
                                 <span>#Stripe</span> <span>#SaaS</span> <span>#WebDev</span> <span>#ShipIt</span>
                             </div>
