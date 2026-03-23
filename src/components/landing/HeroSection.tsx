@@ -1,21 +1,35 @@
 import { CircleUserRound, CirclePlay, Sparkles, PencilLine, ThumbsUp, MessageCircle, Share2 } from 'lucide-react'
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from 'gsap/all';
+
+gsap.registerPlugin(ScrollTrigger) 
 
 function HeroSection() {
+    useGSAP(() => {
+        gsap.from(['#hero', '#title', '#paragraph', '#buttons'], {opacity: 0,  duration: 3})
+
+        gsap.fromTo("#terminal", { x: -100, opacity: 0}, {scrollTrigger : {trigger: '#terminal', start: 'top bottom', end: 'top 20%' },x:0, opacity:1, duration: 1})
+
+        gsap.fromTo("#post", { x: 100, opacity: 0}, {scrollTrigger : {trigger: '#post' , start: 'top bottom', end: 'top 20%' },x:0, opacity:1, duration: 1})
+
+    }, [])
+
     return (
         <div className="flex flex-col items-center gap-8 pb-16">
-            <div className="flex justify-between items-center gap-2 bg-zinc-100 border-zinc-700 dark:bg-zinc-800 shadow-lg py-1 px-3 rounded-xl dark:text-zinc-200 dark:border-secondary font-mono">
+            <div id='hero' className="flex justify-between items-center gap-2 bg-zinc-100 border-zinc-700 dark:bg-zinc-800 shadow-lg py-1 px-3 rounded-xl dark:text-zinc-200 dark:border-secondary font-mono">
                 <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                 <p className="text-xs">v1.0 is now Live</p>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-black text-center dark:text-background-light leading-tight">
+            <h1 id='title' className="text-4xl md:text-6xl font-black text-center dark:text-background-light leading-tight">
                 Your code tells a story. <br />
                 <span className="bg-linear-to-r from-primary to-purple-500 inline-block text-transparent bg-clip-text">Let AI tell the world.</span>
             </h1>
 
-            <p className="text-center dark:text-secondary md:text-lg font-mono">Turn cryptic <span className="font-mono text-primary bg-primary/10 px-1 py-0.5 rounded text-sm"> git commit</span> messages into viral LinkedIn updates in seconds. <br />Stop wasting time writing copy; start shipping.</p>
+            <p id='paragraph' className="text-center dark:text-secondary md:text-lg font-mono">Turn cryptic <span className="font-mono text-primary bg-primary/10 px-1 py-0.5 rounded text-sm"> git commit</span> messages into viral LinkedIn updates in seconds. <br />Stop wasting time writing copy; start shipping.</p>
 
-            <div className="flex flex-col md:flex-row gap-5">
+            <div id='buttons' className="flex flex-col md:flex-row gap-5">
                 <button className="btn-primary text-sm md:text-md">
                     <CircleUserRound />
                     Connect Your Github
@@ -30,9 +44,9 @@ function HeroSection() {
                 </button>
             </div>
 
-            <section className='flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 w-full max-w-6xl px-4'>
+            <section  className='flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 w-full max-w-6xl px-4'>
 
-                <div className='flex-1 rounded-xl bg-background-secondary border border-zinc-800 w-full shadow-2xl overflow-hidden'>
+                <div id='terminal' className='flex-1 rounded-xl bg-background-secondary border border-zinc-800 w-full shadow-2xl overflow-hidden'>
                     <div className='flex items-center gap-2 bg-zinc-900/50 px-4 py-3 border-b border-zinc-800'>
                         <div className='flex gap-1.5'>
                             <div className='h-3 w-3 rounded-full bg-[#ff5f56]'></div>
@@ -84,7 +98,7 @@ function HeroSection() {
                     </div>
                 </div>
 
-                <div className='flex-1 rounded-xl dark:bg-background-secondary border border-zinc-300 dark:border-zinc-800 w-full shadow-2xl overflow-hidden'>
+                <div id='post' className='flex-1 rounded-xl dark:bg-background-secondary border border-zinc-300 dark:border-zinc-800 w-full shadow-2xl overflow-hidden'>
 
                     <div className='flex justify-between items-center bg-zinc-100 dark:bg-zinc-900/50 px-4 py-3 border-b border-zinc-300 dark:border-zinc-800'>
                         <div className='flex items-center gap-2'>
