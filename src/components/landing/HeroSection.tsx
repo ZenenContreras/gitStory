@@ -7,11 +7,11 @@ gsap.registerPlugin(ScrollTrigger)
 
 function HeroSection() {
     useGSAP(() => {
-        gsap.from(['#hero', '#title', '#paragraph', '#buttons'], {opacity: 0,  duration: 3})
+        gsap.from(['#hero', '#title', '#paragraph', '#buttons'], {opacity: 0,  duration: 2})
 
-        gsap.fromTo("#terminal", { x: -100, opacity: 0}, {scrollTrigger : {trigger: '#terminal', start: 'top 80%', end: 'top 40%' }, x:0, opacity:1 })
+        gsap.fromTo("#terminal", { x: -100, opacity: 0}, {scrollTrigger : {trigger: '#terminal', start: 'top 80%', end: 'top 40%' }, x:0, opacity:1, duration: 2 })
 
-        gsap.fromTo("#post", { x: 100, opacity: 0}, {scrollTrigger : {trigger: '#post' , start: 'top 80%', end: 'top 40%' },x:0, opacity:1})
+        gsap.fromTo("#post", { x: 100, opacity: 0}, {scrollTrigger : {trigger: '#post' , start: 'top 80%', end: 'top 40%' },x:0, opacity:1, duration: 2})
 
     }, [])
 
